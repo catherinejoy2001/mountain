@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Green Mountain Energy</title>
+	<style>
+		header{
+			position: fixed;
+			display: grid;
+			grid-template-columns: 14% 86%;
+			background-color: white;
+			width: 100%;
+			z-index: 1;
+		}
+		header ul{
+			
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
+			list-style-type: none;
+			font-size: 20px;
+			 
+		}
+		header ul li{
+			background-color: white;
+		}
+		a{
+			color: grey;
+			font-size: 20px;
+		}
+		/* hr {
+            height: 35px; 
+            color:black; 
+        } */
+        button{
+        	background-color: orange;
+        	border: none;
+        	padding: 12px;
+        	color: white;
+        }
+        div{
+        	border: 1px solid;
+        	display: none;
+        }
+        #hello:hover>div{
+        	display: inline-block;
+        	position: absolute;
+        	left:150px ;
+        	top: 50px;
+        	background-color: white;
+
+        }
+        a.hi:hover{
+        	background-color: skyblue;
+        	color: white;
+        }
+         div{
+        	border: 1px solid;
+        	display: none;
+        }
+        #moun:hover>div{
+        	display: inline-block;
+        	position: absolute;
+        	left:350px ;
+        	top: 50px;
+        	background-color: white;
+        }
+        a.eem:hover{
+        	background-color: skyblue;
+        	color: white;
+        }
+        div{
+        	border: 1px solid;
+        	display: none;
+        }
+        #about:hover>div{
+        	display: inline-block;
+        	position: absolute;
+        	left:450px ;
+        	top: 50px;
+        	background-color: white;
+        }
+        a.ab:hover{
+        	background-color: skyblue;
+        	color: white;
+        }
+        div{
+        	border: 1px solid;
+        	display: none;
+        }
+        #customer:hover>div{
+        	display: inline-block;
+        	position: absolute;
+        	left:700px ;
+        	top: 50px;
+        	background-color: white;
+        }
+        a.ct:hover{
+        	background-color: skyblue;
+        	color: white;
+        }
+
+        
+        .bgimg form{
+        	text-align: center;
+        	position: absolute;
+        	top: 370px;
+        	left: 550px; 	
+        }
+
+        .bgimg form input{
+        	font-size: 25px;
+
+
+
+        }
+        [alt="abc"]{
+        	width:1500px;
+        	height:736px;
+        }
+        .heading{
+        	color: white;
+        	font-size: 25px;
+        }
+        body{
+        	margin: 0;
+        	padding: 0;
+        }
+		.abc{
+			background-color: silver;
+			color: white;
+			position: fixed;
+			left: -34px;
+			top: 339px;
+			font-size: 25px;
+			z-index: 1;
+			transform: rotate(270deg);
+		}
+		.bm{
+			width: 100%;
+			background-color: #30B476;
+			box-sizing: border-box;
+		}
+		img{
+			width: 450px;
+		}
+		.imglink{
+			border: 0;
+			padding: 0;
+		}
+		.fly{
+			width: 200px;
+			position: absolute;
+			right: 6%;
+			bottom: -70px;
+		}
+		.fly img{
+			width: 150px;
+		}
+		.res{
+			position: absolute;
+			bottom: -5.1cm;
+			width: 100%;
+			background-color: #00935e;
+			box-sizing: border-box;
+		}
+		.res p{
+			text-align: center;
+			font-size: 30px;
+			color: white;
+		}
+		.res ul{
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
+			list-style-type: none;
+			font-size: 15px;
+			color: white;
+			text-align: center;
+		}
+		.HF1{
+			text-align: center;
+			background-color:white;
+			position: absolute;
+			top:26cm;
+			left: 5cm;
+			font-family:Georgia, 'Times New Roman', Times, serif;
+			width:8cm;
+			height: 10cm;
+		}
+		.HF1 img{
+			width: 100px ;
+			height: 100px;
+		}
+
+		.HF1:hover{
+            transform:scale(1.1);   
+		}
+		.HF2{
+			background-color:white;
+			position: absolute;
+			top:26cm;
+			text-align: center;
+			left:17cm;
+			width:8cm;
+			height: 10cm;
+	        font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+			.HF2 img{
+			width: 100px ;
+			height: 100px;
+			
+			}
+			.HF2:hover{
+            transform:scale(1.1);   
+		}
+			.HF3{
+				background-color:white;
+			position: absolute;
+			top:26cm;
+			text-align: center;
+			left: 30cm;
+			width:8cm;
+			height: 10cm;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+			}
+			.HF3 img{
+			width: 100px ;
+			height: 100px;
+			
+			}
+			.HF3:hover{
+            transform:scale(1.1);   
+		}
+			.homefea{
+				background-color:#dff2f7;
+				text-align: center;
+				box-sizing: border-box;
+				width: 100%;
+				height: 15cm;
+				position: absolute;
+				top: 24.5cm;
+				z-index: -1;
+			}
+			.mission img{
+			position: absolute;
+			top: 38cm;
+			background-position-x: center;
+			background-size: cover;
+			height: 560px;
+			width: 40.2cm;
+			}
+			.mission p{
+				text-align:center ;
+				color: white;
+				position: absolute;
+				top: 45cm;
+				font-size: 20px;
+				left: 10cm;
+			}
+			.mission h5{
+				text-align:center;
+				color: white;
+				position: absolute;
+				top: 43cm;
+				font-size: 30px;
+				left: 18cm;
+			}
+
+	</style>
+</head>
+<body>
+<header>
+	<img src="https://www.greenmountainenergy.com/system/assets/images/gme-logo-spring2017-refresh.png">
+    <nav>
+		<ul>
+			<li id="hello">Plans and Services
+				<div>
+					<p style="color:green;">Residential</p>
+					<p><a class="hi" href="">Go Local Solar - 100% Texas Solar Energy</a></p>
+					<p><a class="hi" href="">Footprint Free Plan</a></p>
+					<p><a class="hi" href="">Solar All Nighter for EVs</a></p>
+					<p><a class="hi" href="">Renewable Rewards Buy Back Program</a></p>
+					<p><a class="hi" href="">Get a Quote on Home Solar Panels</a></p>
+					<p><a class="hi" href="">Conserve with Ready, Set, Green</a></p>
+					<p><a class="hi" href="">View All Electricity Plans</a></p>
+                    <p style="color:green;">COMMERCIAL</p>
+                    <p><a class="hi" href="">Electricity for Small Business</a></p>
+                    <p><a class="hi" href="">Commercial Solar Power</a></p>
+                    <p><a class="hi" href="">Solar Buyback Program</a></p>
+                    <p><a class="hi" href="">Channel Partners</a></p>
+                    <p><a class="hi" href="">Get A Quote for Your Business</a></p>
+				</div>
+			
+    		<li id="moun">Why Go Green?
+    			<div>
+    				<p style="color:green;">INTRO TO CLEAN ENERGY</p>
+    				<p><a class="eem" href="">Renewable Energy 101</a></p>
+    				<p><a class="eem" href="">What is Clean Energy</a></p>
+    				<p><a class="eem" href="">Power of Consumer Choice</a></p>
+    				<p style="color:green;">HOW YOU CAN HELP</p>
+    				<p><a class="eem" href="">CO2 Offset Calculator</p>
+    					<p><a class="eem" href="">Buy Carbon Offsets</p>
+    						<p><a class="eem" href="">Green Living Tips</p>
+    							<p><a class="eem" href="">Energy-Saving Tips</p>
+    								<p><a class="eem" href="">Ways to Protect the Environment</p>
+    									<p><a class="eem" href="">Drive Clean with an EV</p>
+    			</div>
+    		<li id="about">About Us
+    			<div>
+    				<p style="color:green;">ABOUT THE COMPANY</p>
+    				<p><a class="ab" href="">Our History</p>
+    					<p><a class="ab" href="">Our Mission</p>
+    						<p><a class="ab" href="">Our Leaders</p>
+    							<p><a class="ab" href="">Sustainability Commitment</p>
+    								<p><a class="ab" href="">Product Integrity</p>
+    									<p><a class="ab" href="">Markets Served & Projects Supported</p>
+    										<p><a class="ab" href="">Blog</p>
+    											<p style="color:green;">SUSTAINABLE CHARITABLE PROGRAM</p>
+    				<p><a class="ab" href="">About Sun Club</p>
+    					<p><a class="ab" href="">Apply for a Grant</p>
+    						<p><a class="ab" href="">Donate</p>
+    						<p style="color:green;">CUSTOMER TESTIMONIALS</p>
+    						<p><a class="ab" href="">Residential Customers</p>
+    							<p><a class="ab" href="">Solar Panel Installation Customers</p>
+    								<p><a class="ab" href="">Commercial Customers</p>
+
+    			</div>
+    		<li id="customer">Customer Service
+    			<div>
+    				<p style="color:green;">CUSTOMER RESOURCES</p>
+    				<p><a class="ct" href="">Contact My Utility</a></p>
+    					<p><a class="ct" href="">How to Read My Bill</a></p>
+    						<p><a class="ct" href="">Business Portal</a></p>
+    							<p><a class="ct" href="">Green Mountain App</a></p>
+    								<p><a class="ct" href="">Green Team Refer-a-Friend</a></p>
+    									<p style="color:green;">CONTACT US</p>
+    									<p><a class="ct" href="">Residential</a></p>
+    										<p><a class="ct" href="">Commercial</a></p>
+    											<p><a class="ct" href="">Contact Us Online</a></p>
+
+    			</div>
+    		<hr>
+    		<li><button>Sign Up</button></li>
+    		<li>&#x1F464 My Account</li>
+        </ul>
+        </nav>
+        </ul>
+
+   </header>
+        <section class="bgimg">
+        	<img src="https://images.pexels.com/photos/101841/pexels-photo-101841.jpeg?cs=srgb&dl=pexels-photomix-company-101841.jpg&fm=jpg" alt="abc">
+        	<form>
+        		<h1 class="heading">Light the Future
+                 with clean energy.</h1>
+        		<input type="text" name="" placeholder="Enter your ZIP code">
+        		<input type="submit" name="" value="Get Started" style="background-color: orange; color: white; border: none;">
+        	</form>
+        	
+        </section>
+		<section class="abc">
+			Feedback
+		</section>
+		<section class="bm">
+			<a href="https://youtu.be/RLzC55ai0eo" class="imglink">
+           <img src="https://www.greenmountainenergy.com/Images/play-firefly-Green_tcm465-60602_w1024_n.png">
+		   </a>
+		</section>
+		<section class="fly">
+			<img src="https://www.greenmountainenergy.com/Images/homepage-firefly-desktop_tcm465-60597.png">
+		</section>
+		<section class="res">
+         <p>Over 20 years of providing solar and wind energy to residents of:</p>
+		 <ul>
+			<li>Texas</li>
+			<li>Illinois</li>
+			<li>Pennsylvania</li>
+			<li>Maryland</li>
+			<li>New Jersey</li>
+			<li>New York</li>
+			<li>Massachusetts</li>
+		 </ul>
+		</section>
+	
+		<section class="HF1">
+			<!-- <a href=""></a> -->
+			<img src="https://www.greenmountainenergy.com/Images/GME-HP-Promo-BestOfTheBest23_tcm465-63674.png" alt="img">
+			<h5>Best Solar Provider in Houston</h5>
+			<p>For the second time, Green Mountain Energy has been named Best Solar Power provider in Houston. Check out our solar journey options below.</p>
+		    <button>Learn More</button>
+		</section>
+		<section class="HF2">
+			<!-- <a href=""></a> -->
+			<img src="https://www.greenmountainenergy.com/Images/app-250x250_tcm465-57535.png" alt="img2">
+			<h5>Track your usage.</h5>
+			<p>The Green Mountain App is the best tool for staying on top of your energy usage throughout the seasons.</p>
+		    <button>Get the App</button>
+		</section>
+		<section class="HF3">
+			<!-- <a href=""></a> -->
+			<img src="https://www.greenmountainenergy.com/Images/vivint-homepage-promo_tcm465-60822.png" alt="img3">
+			<h5>A smart home is an
+				energy-efficient home.
+				</h5>
+			<p>Energy efficiency is key to living greener, so we’ve partnered with Vivint to offer new home automation systems to eligible customers.</p>
+		    <button>Call</button>
+	</section>
+
+<section class="homefea">
+</section>
+<section class="mission">
+	<img src="	https://www.greenmountainenergy.com/system/assets/images/home-page/mission-bg.png">
+	<h5>Our mission</h5>
+	<p>It all started in Vermont in 1997. Our passion for protecting the environment led us to our mission: <br> 
+		to use the power of consumer choice to change the way power is made. <br>
+		Today, as the longest-serving renewable energy retailer, we remain committed to sustainability <br>
+		every step of the way. By offering only products with an environmental benefit and operating with a <br>
+		zero-carbon footprint, we’re living our promise to the planet, inside and out.</p> <br>
+
+</section>	
+</div>
+</body>
+</html>
